@@ -17,7 +17,7 @@ const Catalogue = () => {
             rel="noopener noreferrer" 
             className="catalogue-button"
           >
-            View Full Catalogue
+            Ver Catálogo Completo
           </a>
         </div>
       </div>

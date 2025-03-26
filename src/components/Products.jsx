@@ -24,7 +24,7 @@ const Products = ({ title, description, images, links }) => {
           rel="noopener noreferrer" 
           className="product-button"
         >
-          More
+          Mais
         </a>
       </div>
     </section>
