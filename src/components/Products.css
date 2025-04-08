@@ -1,0 +1,136 @@
+.product-line {
+  padding: 7rem 1rem;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.product-line:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.product-line::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  pointer-events: none;
+}
+
+.product-content {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4rem;
+}
+
+.product-line:nth-child(even) .product-content {
+  flex-direction: row;
+}
+
+.product-info {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.product-info h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: rgba(80, 173, 85, 1);  
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.product-info p { 
+  font-size: clamp(1em, 1.8vw, 2.2rem);
+  color: #333;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+}
+
+.product-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.product-button {
+  background-color: #50AD55;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-button:hover {
+  background-color: #428f47;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .product-content, .product-line:nth-child(even) .product-content {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .product-images {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .product-line {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-container:last-of-type{
+    margin-top: 10%;
+    margin-left: 50%;
+  }
+
+}
