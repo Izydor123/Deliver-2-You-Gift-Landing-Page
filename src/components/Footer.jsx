@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contate-nos</h4>
           <p>Email: <a href="mailto:geral@deliver2yougift.com">geral@deliver2yougift.com</a></p>
-          <p>Telefone: <a href="tel:00351912224405">+351 239 169 651</a></p>
+          <p>Telefone: <a href="tel:003512391696515">+351 239 169 651</a></p>
           <p>Morada: Rua da Quinta 27 A, 3040-823 Cernache</p>
           
           <div className="social-links">
