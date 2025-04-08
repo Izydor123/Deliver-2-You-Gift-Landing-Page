@@ -1,0 +1,15 @@
+dist
+.env      
+.env.*
+!.env.example
+node_modules
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.qodo
